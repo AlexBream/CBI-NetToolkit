@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cbi.Engine.Rendiconto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,10 @@ namespace Cbi.Console
     {
         static void Main(string[] args)
         {
+            var engine = new RendicontoEngine();
+            var fileName = @"C:\Temp\Cbi\TestRnd.txt";
+            var r = engine.ReadFile(fileName);
+
         }
     }
 }

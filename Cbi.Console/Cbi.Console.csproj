@@ -54,6 +54,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Cbi.Engine\Cbi.Engine.csproj">
+      <Project>{96e48567-68ce-414b-a6f1-0ac4ccd41672}</Project>
+      <Name>Cbi.Engine</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Cbi.NetStandard\Cbi.Core.csproj">
       <Project>{4d32d025-f73e-46f8-bebe-40beda8c6d93}</Project>
       <Name>Cbi.Core</Name>
