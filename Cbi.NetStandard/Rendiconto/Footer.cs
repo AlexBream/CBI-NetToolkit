@@ -5,17 +5,16 @@ using System.Text;
 
 namespace Cbi.Core.Rendiconto
 {
+    /// <summary>
+    /// Codice documento: CBI-RND-001
+    /// Versione documento: v.6.05
+    /// Utimo aggiornamento: 05-03-2013
+    /// Funzione "Rendicontazione saldi e movimenti CC"
+    /// Struttura "EF (record di coda)
+    /// </summary>
     [FixedLengthRecord()]
-    public class Footer
+    public class Footer: TipoRecordBase
     {
-        [FieldFixedLength(1)]
-        public string Filler1 { get; set; }
-        /// <summary>
-        /// RH
-        /// </summary>
-        [FieldFixedLength(2)]
-        public string TipoRecord { get; set; }
-
         /// <summary>
         /// Codice ABI della Banca mittente estratti conto; è censita sul Directory
         /// </summary>

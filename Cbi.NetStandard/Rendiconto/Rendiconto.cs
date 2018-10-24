@@ -14,6 +14,8 @@ namespace Cbi.Core.Rendiconto
 
         public Header Header { get; set; }
 
+        public SaldoInziale SaldoInziale { get; set; }
+
         public Footer Footer { get; set; }
 
     }
