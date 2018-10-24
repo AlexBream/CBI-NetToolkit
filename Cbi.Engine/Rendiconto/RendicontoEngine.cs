@@ -24,20 +24,17 @@ namespace Cbi.Engine.Rendiconto
         {
             var rr = new List<Core.Rendiconto.Rendiconto>();
             var result = engine.ReadFile(fileName);
+            Core.Rendiconto.Rendiconto rnd = null;
 
-            var @switch = new Dictionary<Type, Action<object, Core.Rendiconto.Rendiconto>> {
-                { typeof(Header), (row, rnd) => { rnd = new Core.Rendiconto.Rendiconto((Header)row); rr.Add(rnd);} },
-                { typeof(Footer), (row, rnd) => { rnd.Footer = (Footer)row; }},
+            var @switch = new Dictionary<Type, Action<object>> {
+                { typeof(Header), (row) => { rnd = new Core.Rendiconto.Rendiconto((Header)row); rr.Add(rnd);} },
+                { typeof(Footer), (row) => { rnd.Footer = (Footer)row; }},
            };
-
-            Core.Rendiconto.Rendiconto rendiconto = null;
 
             foreach (var row in result)
             {
-                @switch[row.GetType()](row, rendiconto);
+                @switch[row.GetType()](row);
             }
-
-
 
             return null;
         }

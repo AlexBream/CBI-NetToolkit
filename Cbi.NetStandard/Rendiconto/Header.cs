@@ -52,8 +52,8 @@ namespace Cbi.Core.Rendiconto
         public string NomeSupporto { get; set; }
 
         [FieldFixedLength(76)]
-
         public string Filler2 { get; set; }
+
         [FieldFixedLength(5)]
         public string CampoNonDisponibile { get; set; }
 
