@@ -52,6 +52,8 @@ namespace Cbi.Engine.Rendiconto
                     return typeof(Header);
                 case "EF":
                     return typeof(Footer);
+                case "61":
+                    return typeof(SaldoInziale);
                 default:
                     return null;
             };
