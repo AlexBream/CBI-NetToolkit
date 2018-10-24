@@ -28,6 +28,7 @@ namespace Cbi.Engine.Rendiconto
 
             var @switch = new Dictionary<Type, Action<object>> {
                 { typeof(Header), (row) => { rnd = new Core.Rendiconto.Rendiconto((Header)row); rr.Add(rnd);} },
+                { typeof(SaldoInziale), (row) => { rnd.SaldoInziale = (SaldoInziale)row; }},
                 { typeof(Footer), (row) => { rnd.Footer = (Footer)row; }},
            };
 
