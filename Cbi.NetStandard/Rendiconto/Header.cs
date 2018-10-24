@@ -14,19 +14,8 @@ namespace Cbi.Core.Rendiconto
     /// Struttura "RH" (record di testa)
     /// </summary>
     [FixedLengthRecord()]
-    public class Header: ITipoRecord
+    public class Header: TipoRecordBase
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        [FieldFixedLength(1)]
-        public string Filler1 { get; set; }
-        /// <summary>
-        /// RH
-        /// </summary>
-        [FieldFixedLength(2)]
-        public string TipoRecord { get; set; }
-
         /// <summary>
         /// Codice ABI della Banca mittente estratti conto; è censita sul Directory
         /// </summary>

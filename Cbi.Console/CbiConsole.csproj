@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{40ED7594-BC8D-4C59-A585-33D407D48559}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Cbi.Console</RootNamespace>
-    <AssemblyName>Cbi.Console</AssemblyName>
+    <RootNamespace>CbiConsole</RootNamespace>
+    <AssemblyName>CbiConsole</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

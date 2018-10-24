@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cbi.Console
+namespace CbiConsole
 {
     class Program
     {
@@ -13,8 +13,13 @@ namespace Cbi.Console
         {
             var engine = new RendicontoEngine();
             var fileName = @"C:\Temp\Cbi\TestRnd.txt";
-            var r = engine.ReadFile(fileName);
+            var collection = engine.ReadFile(fileName);
 
+            foreach (var item in collection)
+            {
+                Console.WriteLine(item.Header.NomeSupporto);
+            }
+            Console.Read();
         }
     }
 }

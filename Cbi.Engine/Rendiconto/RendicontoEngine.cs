@@ -36,7 +36,7 @@ namespace Cbi.Engine.Rendiconto
                 @switch[row.GetType()](row);
             }
 
-            return null;
+            return rr.ToArray();
         }
 
         private Type CustomSelector(MultiRecordEngine engine, string row)
