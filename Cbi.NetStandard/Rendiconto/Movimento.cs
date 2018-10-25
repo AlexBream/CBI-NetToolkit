@@ -14,7 +14,7 @@ namespace Cbi.Core.Rendiconto
     /// </summary>
     [FixedLengthRecord()]
 
-    public class Movimento
+    public class Movimento: TipoRecordBase
     {
 
     }
